@@ -9,6 +9,7 @@ public class Stock {
 	private double eps;
 	private double pe;
 	private ArrayList<String> relatedKeyWords;
+	private ArrayList<Double> ;
 	
 	public Stock(String stockName, String stockQuote, String marketSector, String market) {
 		this.stockName = stockName;
@@ -30,7 +31,7 @@ public class Stock {
 	}
 	
 	public String getStockQuote() {
-		return this.stockName;
+		return this.stockQuote;
 	}
 	
 	public void setMarketSector(String marketSector) {

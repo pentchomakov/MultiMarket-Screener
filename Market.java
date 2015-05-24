@@ -9,10 +9,9 @@ public class Market {
 	private int closingTime;
 	private ArrayList<Stock> stocks;  
 	
-	public Market(String marketName, String marketLocation, int size, int openingTime, int closingTime) {
+	public Market(String marketName, String marketLocation, int openingTime, int closingTime) {
 		this.marketName = marketName;
 		this.marketLocation = marketLocation;
-		this.size = size;
 		this.openingTime = openingTime;
 		this.closingTime = closingTime;
 		this.stocks = new ArrayList<Stock>();
@@ -32,14 +31,6 @@ public class Market {
 	
 	public String getMarketLocation() {
 		return this.marketLocation;
-	}
-	
-	public void setMarketSize(int size) {
-		this.size = size;
-	}
-	
-	public int getMarketSize() {
-		return this.size;
 	}
 	
 	public void addStock(Stock stock) {
